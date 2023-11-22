@@ -1,0 +1,12 @@
+{% extends "_base.html" %}
+
+{% block page_title %} delete {% endblock page_title %}
+
+{% block content %}
+    <form action="" method="post">
+        {% csrf_token %}
+        <h2> Are you sure delete {{Books.title}} ?</h2>
+        <button type="submit" class="btn btn-danger mt-2">yes I'm sure </button>
+    </form>
+    <a class="btn btn mt-3" href="{% url "book_list" %}"> book list </a> 
+{% endblock content %}
