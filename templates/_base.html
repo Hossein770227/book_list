@@ -38,9 +38,9 @@
             {% if user.is_authenticated %} 
                 خوش آمدی {{user.username}} | <a class="link-light text-decoration-none" href="{% url "logout" %}">خروج</a></div>
             {% else %}
-                <a class="link-light text-decoration-none" href="{% url "login" %}">ورود</a></div>
+                <a class="link-light text-decoration-none" href="{% url "login" %}">ورود</a>
                 <span>یا</span>
-                <a class="link-light text-decoration-none" href="{% url "signup" %}">ثبت نام</a></div>
+                <a class="link-light text-decoration-none" href="{% url "signup" %}">ثبت نام</a>
             {% endif %}
     </div>
 
