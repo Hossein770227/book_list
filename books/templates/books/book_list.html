@@ -15,13 +15,13 @@
               {% if book.covers %}
                 <img src="https://cdn.fidibo.com/phoenixpub/content/3b8d35b4-b686-4c89-b7f6-e3e4590e8dcb/fdb85390-9c08-4b34-9447-863356af88e4.jpg?width=384" class="img-fluid rounded-start" alt="..." />
                 </div>
-            {% endif %}
+              {% endif %}
             <div class="col-md-8 h-100">
               <div class="d-flex flex-column justify-content-between h-100">
                 <div class="card-body">
                     <a href="{{book.get_absolute_url}}" class="text-decoration-none"> <h3 class="card-title"><strong>{{book.title}}</strong></h3></a>
                  
-                  <p class="card-text pt-3">{{book.description|linebreaks|truncatewords:30}}</p>
+                  <p class="card-text pt-3">{{book.description|truncatewords:30}}</p>
                   <p class="text-muted">نویسنده: {{book.author}} </p>
                 </div>
               </div>
